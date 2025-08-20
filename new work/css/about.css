@@ -1,0 +1,231 @@
+body{
+    background:rgb(221, 221, 221) ;
+
+}
+/*page top*/
+.logoImg{
+width: 100px;
+height: 70px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+   
+}
+li{
+    list-style-type: none;
+}
+li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding-left: 15px;
+}
+/*hamburger-menu*/
+.hamBurger span {
+    width: 40px;
+    height: 5px;
+    border-radius: 30%;
+    margin-bottom: 3px;
+    right: 0;
+    position: relative;
+    background: black;
+    top: 15px;
+}
+.hamBurger input{
+    position: absolute;
+    width: 43px;
+    height: 35px;
+    top: 15px;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+}
+.hamBurger{
+padding-top: 10px;
+}
+@media screen and (max-width:900px) {
+    .hamBurger span{
+        display: block;
+    }
+    .menu{
+        display: none;
+        right: 0;
+    }
+   .hamBurger li {
+        color: white;
+       
+       padding-bottom: 2em;
+    }
+    .hamBurger a{
+        color: white;
+    }
+    .hamBurger a:hover{
+        color: orange;
+        font-size: 25px;
+        transition: 0.2s ease-in-out;
+    }
+    .hamBurger input:checked ~ span {
+        transform: rotate(50deg);
+        transition: 0.5s ease-in-out;
+        z-index: 1;
+        background-color: white;
+    }
+    .hamBurger input:checked ~ span:nth-last-child(3) {
+        transform: rotate(-50deg);
+        transition: 0.5s ease-in-out;
+    }
+    .hamBurger input:checked ~ span:nth-last-child(2) {
+        transform: rotate(0);
+        opacity: 0;
+    }
+    .hamBurger input:checked ~ .menu{
+        display: block;
+      padding: 3rem;
+      background: black;
+      position: absolute;
+top: 0;
+    }
+}
+/*end of hamburger*/
+
+/*page bottom*/
+
+.white{
+    background: white;
+    width: 500px;
+    height: 830px;
+    margin: 30px auto;
+    margin-top: 6em;
+   
+}
+.contactImg{
+    width: 350px;
+    height: 350px;
+   
+    border-radius: 100%;
+    margin-left: -8rem;
+   margin-top: -3em;
+   overflow: hidden;
+   ;
+}
+.contactImg> img{
+    margin-left: -190px;
+}
+.contac-us{
+width: 350px;
+height: 250px;
+
+margin-right: -11rem;
+margin-top: 2em;
+}
+.contac-us button{
+    margin-bottom: 1em;
+    font-size: 1.1em;
+    padding: 15px;
+    border-radius: 35px;
+    background: rgb(27, 27, 136);
+    color: rgb(255, 252, 252);
+    border: none;
+}
+.pageTop{
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-between;
+   
+}
+
+
+/*page bottom contact details*/
+.one , .two , .three{
+
+width: 400px;
+height:380px;
+font-size: 20px;
+margin-top: 5em;
+padding: 1em;
+}
+.pageBottom{
+    display: flex;
+}
+.one {
+    margin-left: -11em;
+    background: rgb(179, 221, 235);
+    color:white;
+}
+.three {
+    margin-right: -11em;
+    background: rgb(74, 74, 216);
+}
+.two{
+    margin-right: 1em;
+    margin-left: 1em;
+    background: rgb(230, 246, 255);
+}
+/*making responsive*/
+@media screen and (max-width:960px){
+    .pageBottom{
+        flex-direction: column;
+    }
+    .one , .two , .three{
+        margin-left: 2em;
+        margin-right: 0;
+        width: 250px;
+height:570px;
+font-size: 25px;
+    }
+    .white{
+        
+        width: 450px;
+        height: 3200px;
+        margin: 30px auto;
+        margin-top: 6em;
+       
+    }
+    .contac-us{
+        width: 250px;
+        height: 250px;
+    margin-left: 3em;
+    margin-bottom: 13em;
+    font-size: 22px;
+
+}
+.pageTop{
+    flex-direction: column;
+}
+.contactImg{
+    width: 300px;
+    height: 300px;
+   
+    border-radius: 100%;
+    margin-left: 3rem;
+   margin-top: -1em;
+   overflow: hidden;
+   ;
+}
+.contactImg> img{
+    margin-left: -220px;
+}
+
+}
+@media screen and (max-width:400px) {
+    
+.white{
+    width: 350px;}
+    .one , .two , .three{
+        margin-left: 0.8em;
+        margin-right: 0;
+        
+
+    }
+    .contactImg{
+       
+        margin-left: 1rem;
+      
+    }
+   
+    
+}

@@ -1,0 +1,102 @@
+
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+           
+           .menu a{
+            color: white;
+            font-size: 22px;
+            text-decoration:none;
+           }
+           .menu li{
+            list-style-type: none;
+            padding: 2em;
+           
+           }
+           .menu a:hover{
+color: orange;
+transition: 0.2s ease-in-out;
+           }
+           .navigation span{
+            width: 35px;
+            height:3px;
+            background: black;
+            margin-bottom: 2px;
+            display:block;
+            position: relative;
+            top:2em;
+
+           }
+           .navigation input{
+
+            position: absolute;
+            width:35px;
+            height: 38px;
+            top: 2em;
+            cursor: pointer;
+            z-index: 3;
+            opacity: 0;
+           }
+           .menu{
+            display: none;
+            background: black;
+            width: 120px;
+            padding-right: 3em;
+            position: absolute;
+            top:0;
+           right: 100%;
+            transition: all .5s ease-in-out;
+           
+           }
+           .navigation input:checked ~ span{
+transform: rotate(-45deg)
+;
+background: white;
+z-index: 1;
+transition: 0.3s ease-in-out;
+           }
+           .navigation input:checked ~ span:nth-last-child(3){
+transform: rotate(45deg)
+;
+transition: 0.3s ease-in-out;
+           }
+           .navigation input:checked ~ span:nth-last-child(2){
+transform: rotate(0)
+;
+opacity: 0;
+           }
+.navigation input:checked ~ .menu{
+    display: block;
+    transform: translateX(-20px);
+   transition: 0.9s ease-in-out;
+right: 60%;
+   
+}
+        </style>
+        <title>hamburger menu</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="navigation">
+               
+                    <input type="checkbox">
+                    <span class="menu-icon"></span>
+                    <span class="menu-icon"></span>
+                    <span class="menu-icon"></span>
+               
+               <ul class="menu">
+                <li><a href="#" >home</a></li>
+                <li><a href="#" >pricing</a></li>
+                <li><a href="#">ham</a></li>
+                <li><a href="#">web</a></li>
+               </ul>
+</div>
+
+            </nav>
+        </header>
+    </body>
+</html>

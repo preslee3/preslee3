@@ -1,0 +1,31 @@
+{
+	"folders": [
+		{
+			"path": "../vscode lesson"
+		},
+		{
+			"path": "../../Desktop/html-css-simply-recipes-main"
+		},
+		{
+			"path": "../new html-css project"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../furniture html-css"
+		},
+		{
+			"path": "../recrearting furniture"
+		},
+		{
+			"path": "../js-basics"
+		},
+		{
+			"path": "../../Desktop/website"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "new work"
+	}
+}

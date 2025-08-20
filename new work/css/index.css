@@ -1,0 +1,170 @@
+ul {
+    list-style-type: none;
+    display: flex;
+    font-size: 19px;
+    gap: 1em;
+    
+
+}
+
+
+
+a {
+
+    text-decoration: none;
+    color: #1f1f1f;
+    font-family: "Avenir Next", "Avenir", sans-serif;
+    font-weight: 900;
+
+}
+
+header {
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.flexx {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    gap: 10em;
+}
+
+.flexx img {
+    max-width: 100%;
+
+}
+
+p.sec,
+.comme {
+    font-size: 30px;
+}
+
+.shop {
+    color: rgb(46, 44, 36, .60);
+    text-transform: capitalize;
+
+}
+
+@media screen and (max-width: 900px) {
+
+    /*header{
+    padding: 1rem;
+    padding-left: 0;
+}*/
+    .flexx {
+
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    #dotts {
+        display: flex;
+    }
+
+    #hero-illu {
+        order: -1;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+
+}
+
+
+
+
+a:hover {
+    text-decoration: none;
+    color: rgb(55, 70, 70);
+}
+
+
+/*hamburger menu*/
+ .menu-icon{
+    width: 45px;
+    height: 4px;
+    margin-top: 3px;
+    background: #000000;
+   
+   border-radius: 4px;
+   position: relative;
+ }
+ .menu{
+    transition: right 2.5s ease-in-out;
+   
+ }
+ .toggle-menu{
+    opacity: 0;
+    cursor: pointer;
+    position: fixed;
+ }
+ @media screen and (max-width:900px) {
+    .menu-icon{
+        display: block;
+       transition: 0.4s ease-in-out;
+      
+      
+    }
+.menu{ display: none;
+  }
+
+
+.menu a{
+ 
+    color: white;
+}
+.toggle-menu{
+   z-index: 3;
+   
+    width: 40px;
+   height: 32px;
+}
+.navigation input:checked ~ .menu-icon {
+    transform: rotate(45deg);
+   background: #ffffff;
+   z-index: 1;
+top:1rem;
+
+}
+
+.navigation input:checked ~ .menu-icon:nth-last-child(2){
+    opacity: 0;
+   
+}
+
+.navigation input:checked ~ .menu-icon:nth-last-child(3){
+    transform: rotate(-45deg);
+   
+}
+.navigation input:checked ~ .menu{
+display: block;
+background: #1f1f1f;
+color: white;
+position: absolute;
+top: 0;
+right: 0.1em;
+
+
+}
+.navigation{
+    margin-top: 1em;
+}
+a:hover{
+    color: #b99442;
+    transition: 0.1ms ease-in-out;
+}
+.menu li{
+    padding: 3.2rem;
+   padding-right: 5rem;
+  
+}
+.navigation input:checked ~ #hero-illu {
+    padding-top: 10em;
+}
+ }
+.navigation input:checked ~ ul
+ {
+   transform: none;
+ }
